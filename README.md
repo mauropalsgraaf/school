@@ -3,4 +3,5 @@
 Make sure the gcc compiler is installed
 
 Run the following command:
+
     gcc -Wall -o ${outputname} ${fileToCompile}
