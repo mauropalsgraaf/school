@@ -1,8 +1,9 @@
 #include <stdio.h>
-int numberOfRecursionCalls = 0;
 
 int fibHelper(int nmbr, int sum, int prev) {
   if (nmbr == 0) {
+
+    printf("helper: %d\n", sum);
     return sum;
   }
 
@@ -17,11 +18,11 @@ int fib(int nmbr) {
 
   result = fibHelper(nmbr - 1, 1, 0);
 
+  printf("fib: %d\n", result);
   return result;
 }
 
 int fib2(int nmbr) {
-  numberOfRecursionCalls++;
   if (nmbr <= 1) {
     return nmbr;
   }
@@ -30,7 +31,6 @@ int fib2(int nmbr) {
 }
 
 int main() {
-  printf("%d\n", fib2(4));
-  printf("%d\n", numberOfRecursionCalls);
+  printf("%d\n", fib(4));
   return 0;
 }
