@@ -13,9 +13,10 @@ public class AESCipher implements CipherInterface {
 
     public AESCipher(String key) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         byte[] keyBytes = key.getBytes("UTF-8");
-        MessageDigest sha = MessageDigest.getInstance("SHA-1");
+        MessageDigest sha = MessageDigest.getInstance("SHA-256");
         keyBytes = sha.digest(keyBytes);
         keyBytes = Arrays.copyOf(keyBytes, 16);
+
         this.key = new SecretKeySpec(keyBytes, "AES");
     }
 
