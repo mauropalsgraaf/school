@@ -34,13 +34,15 @@ public class PlayFairMessageToEncrypt {
     }
 
     private String seperateMultipleOccurancesNextToEachother(String toEncrypt) {
+        System.out.println("toEncrypt = " + toEncrypt);
         String prev = toEncrypt.substring(0, 1);
         String result = prev;
 
         for (int i = 1; i < toEncrypt.length(); i++) {
+            System.out.println("toEncrypt = " + toEncrypt.length());
             String current = toEncrypt.substring(i, i + 1);
 
-            if (current.equals(prev)) {
+            if (current.equals(prev) && result.length() % 2 == 1) {
                 result = result.concat(PLAY_FAIR_SEPERATION_CHARACTER + current);
             } else {
                 result = result.concat(current);
@@ -49,6 +51,8 @@ public class PlayFairMessageToEncrypt {
             prev = current;
 
         }
+
+        System.out.println("result = " + result);
 
         return result;
     }

@@ -45,6 +45,7 @@ public class PlayFairPair {
 
     private PlayFairPair(String pair) {
         assert pair.length() == 2;
+        assert ! (pair.substring(0, 1).equals(pair.substring(1, 2)));
 
         this.pair = pair;
     }

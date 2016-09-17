@@ -15,7 +15,7 @@
   </properties>
 
   <build>
-    <finalName>cryptography</finalName>
+    <finalName>filevault</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -29,7 +29,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>org.systems.programming.FileVaultApp</mainClass>
+              <mainClass>org.systems.programming.App</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
@@ -56,6 +56,11 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>2.5.6</version>
     </dependency>
   </dependencies>
 </project>

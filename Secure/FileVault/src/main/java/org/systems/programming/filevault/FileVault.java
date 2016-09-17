@@ -1,11 +1,14 @@
 package org.systems.programming.filevault;
 
-import javax.crypto.NoSuchPaddingException;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
+import org.systems.programming.cipher.DecryptionException;
+import org.systems.programming.cipher.EncryptionException;
+
+import java.io.IOException;
 
 public interface FileVault {
-    void write(byte[] key) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeyException;
+    void newFile(String absolutePath, String fileName, String content) throws IOException, EncryptionException;
 
-    String read(byte[] key);
+    void write(String absolutePath, String fileName, String newContent);
+
+    String read(String absolutePath, String fileName) throws IOException, DecryptionException;
 }
