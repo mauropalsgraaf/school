@@ -1,0 +1,52 @@
+1
+
+a) A
+b) B
+c) D
+
+2 For both answers of question 2, two scripts are provided (written in PHP) on how I got the result
+
+a) this is a simple message encrypted with a simple cryptographic algorithm
+b) this is a simple message encrypted with an improved cryptographic algorithm
+
+Script that provides the answer for question 2a is called decipher.php which is in the root of the archive
+Script that provides the answer for question 2b is called decipher2.php which is in the root of the archive
+
+3
+
+It requires java8 to be installed. Since Java8 functions are used, any version below Java8 will not fit the
+requirements.
+
+To check if Java8 is installed and on your system PATH variable, please run java -version in the terminal.
+
+To run, run the following command: java -jar playfair.jar ${key} ${message} ${mode}
+
+replace ${key} with 25 characters from the alphabet where they should all be unique, also, the j should be missing.
+example: abcdefghiklmnopqrstuvwxyz. This key transforms to the following key used for the playfair cipher
+
+|a, b, c, d, e| 1-5 letters of the provided key
+|f, g, h, i, k| 6-10 letters of the provided key
+|l, m, n, o, p| 11-15 letters of the provided key
+|q, r, s, t, u| 16-20 letters of the provided key
+|v, w, x, y, z| 21-25 letters of the provided key
+
+replace ${message} with the message that you want to do an operation on
+example: message
+Spaces are not allowed.
+
+replace ${mode} with either ENCRYPT or DECRYPT
+
+By executing, the terminal will return the result of the operation executed on the provided message.
+
+I've used Java to implement the PlayFair Cipher. The source code can be found in the cryptography directory, which can
+be found in the root of the provided archive.
+
+4
+
+I've created an interactive filevault where it is possible to create new files and read files from the vault.
+
+To run, run the following command in the root of the provided archive: java -jar filevault.jar
+
+This command will start an interactive shell session which will contain guidance on how to create new files and read encrypted files
+
+The code is provided in a folder which can be found in the root of the directory.
