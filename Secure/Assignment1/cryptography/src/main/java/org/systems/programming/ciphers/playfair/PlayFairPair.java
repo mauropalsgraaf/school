@@ -15,7 +15,7 @@ public class PlayFairPair {
         for (int i = 0; i < toConvert.length(); i = i+2) {
             playFairPairs.add(
                 new PlayFairPair(
-                    toConvert.substring(i, i + 2)
+                    toConvert.substring(i, i+2)
                 )
             );
         }

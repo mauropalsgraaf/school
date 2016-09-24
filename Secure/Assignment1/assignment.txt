@@ -10,7 +10,10 @@ a) this is a simple message encrypted with a simple cryptographic algorithm
 b) this is a simple message encrypted with an improved cryptographic algorithm
 
 Script that provides the answer for question 2a is called decipher.php which is in the root of the archive
+To run: php decipher.php
+
 Script that provides the answer for question 2b is called decipher2.php which is in the root of the archive
+To run: php decipher2.php
 
 3
 
@@ -22,7 +25,8 @@ To check if Java8 is installed and on your system PATH variable, please run java
 To run, run the following command: java -jar playfair.jar ${key} ${message} ${mode}
 
 replace ${key} with 25 characters from the alphabet where they should all be unique, also, the j should be missing.
-example: abcdefghiklmnopqrstuvwxyz. This key transforms to the following key used for the playfair cipher
+example: "abcdefghiklmnopqrstuvwxyz". This key transforms to the following key used for the playfair cipher
+The key should be provided in lower case
 
 |a, b, c, d, e| 1-5 letters of the provided key
 |f, g, h, i, k| 6-10 letters of the provided key
@@ -31,10 +35,12 @@ example: abcdefghiklmnopqrstuvwxyz. This key transforms to the following key use
 |v, w, x, y, z| 21-25 letters of the provided key
 
 replace ${message} with the message that you want to do an operation on
-example: message
-Spaces are not allowed.
+example: "message"
+Only characters provided in the key are allowed in the messageijn
 
-replace ${mode} with either ENCRYPT or DECRYPT
+replace ${mode} with either "ENCRYPT" or "DECRYPT"
+
+An example run could be as following: java -jar playfair.jar "abcdefghiklmnopqrstuvwxyz" "example message" "ENCRYPT"
 
 By executing, the terminal will return the result of the operation executed on the provided message.
 

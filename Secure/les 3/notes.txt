@@ -1,0 +1,35 @@
+Security is layers (top to bottom):
+- Cryptography
+- Bugs
+- Network security
+  -> Firewalls
+  -> IDS
+  -> AV
+  -> VPN
+
+Code based cryptography, since quantom computers will break the current cryptography
+
+CVE = Common Vulnerabilities and Exposures
+CWE = Common Weakness Enumeration
+
+IMPORTANT: What is exploit and vulnerabilities
+
+Tainted input = input from user that can be injected in the app (untrusted)
+
+code                |
+initialized data    |
+uninitialized data  |
+heap                |
+stack               (arrow down)
+
+Problem: Heap and stack are both dynamic, we dont know the size of the heap.
+
+Solution
+
+code                | }
+initialized data    | } This is all fixed memory
+uninitialized data  | }
+heap                (arrow down)
+stack               (arrow up)
+
+The stack goes bottom up, heap goes up to bottom

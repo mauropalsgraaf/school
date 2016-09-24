@@ -1,6 +1,6 @@
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/ciphers/PlayFairCipher.java
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairPair.java
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/PlayFairApp.java
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairKey.java
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/ciphers/CipherInterface.java
-/Users/mauropalsgraaf/Documents/School/VU/Secure/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairMessageToEncrypt.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/ciphers/PlayFairCipher.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/PlayFairApp.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairMessageToEncrypt.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/ciphers/CipherInterface.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairPair.java
+/Users/mauropalsgraaf/Documents/School/VU/Secure/Assignment1/cryptography/src/main/java/org/systems/programming/ciphers/playfair/PlayFairKey.java

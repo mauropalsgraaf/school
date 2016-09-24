@@ -26,8 +26,7 @@ while ($a1 < 29) {
         }
     }
 
-    print_r($result . $a1 . $a2 . "\n");
-
+    print_r($result . "\n");
     $result = '';
 
     if ($a2 < 29) {

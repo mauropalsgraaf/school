@@ -24,9 +24,26 @@ public class PlayFairMessageToEncrypt {
 
         return addPadding(
             seperateMultipleOccurancesNextToEachother(
-                replaceJWithI(toEncrypt)
+                removeSpaces(
+                    replaceJWithI(
+                        toEncrypt.toLowerCase()
+                    )
+                )
             )
         );
+    }
+
+    private String removeSpaces(String toEncrypt) {
+        String result = "";
+
+        for(int i = 0; i < toEncrypt.length(); i++) {
+            String character = toEncrypt.substring(i, i+1);
+            if (!character.equals(" ")) {
+                result = result.concat(character);
+            }
+        }
+
+        return result;
     }
 
     private String replaceJWithI(String toEncrypt) {
